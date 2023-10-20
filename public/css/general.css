@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'lato';
+    max-width: 1140px;
+    margin: 0 auto;
+    background-image: url('/img/bg-2.png');
+}
