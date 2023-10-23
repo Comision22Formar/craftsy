@@ -49,18 +49,25 @@
     border: 1px solid silver;
     border-bottom: none;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    gap : 10px
 }
+
 
 .home__main__aside__section__article:last-child{
     border-bottom: 1px solid silver;
 }
 
+
 .home__main__aside__section--publicidad {
     padding: 10px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .home__main__aside__section--publicidad img {
     width: 100%;
-    margin-bottom: 20px;
 }
