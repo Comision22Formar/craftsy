@@ -8,9 +8,9 @@ header section {
     justify-content: space-between;
 }
 
-header section a {
+.header__section--button-nav{
     border: 1px solid #ffffff;
-    padding: 5px;
+    padding: 5px 8px;
     border-radius: 4px;
     font-size: 1.5rem;
 }
@@ -40,7 +40,7 @@ header nav ul li a {
         align-items: center;
     }
 
-    header section a {
+    .header__section--button-nav{
        display: none;
     }
 
