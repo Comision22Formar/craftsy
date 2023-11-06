@@ -19,6 +19,10 @@ a {
     color: #ffffff;
 }
 
+textarea {
+    resize: none;
+}
+
 body {
     font-family: 'lato';
     max-width: 1140px;
@@ -34,7 +38,6 @@ body {
 }
 
 .box__card {
-    max-width: 320px;
     width: 90%;
     margin: 50px auto;
     padding: 20px;
@@ -42,6 +45,15 @@ body {
     box-shadow: 5px 5px 5px #c0c0c0;
     border-radius: 5px;
 }
+
+.box__card--simple {
+    max-width: 320px;
+}
+
+.box__card--double {
+    max-width: 768px;
+}
+
 
 .box__card--title {
     margin-bottom: 30px;
@@ -51,3 +63,4 @@ body {
 .link {
     color: var(--colorRojo);
 }
+

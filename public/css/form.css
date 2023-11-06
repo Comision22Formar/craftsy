@@ -1,7 +1,9 @@
 .form {
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
 }
+
 
 .form__box {
     margin-bottom: 20px;
@@ -18,17 +20,45 @@
     top:20px;
     cursor: pointer;
     color: var(--colorGris);
-    
 }
 
 .form__label {
     margin-bottom: 20px;
 }
 
-.form__input {
+.form__input, .form__textarea {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #c0c0c0;
     margin-top: 10px;
 }
+
+.form__msg-error {
+    color: red;
+    margin-left: 5px;
+}
+
+.form__box--row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    row-gap: 8px;
+}
+
+.form__box--row h4 {
+    width: 100%;
+}
+
+.form__box--col50 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px) {
+    .form__box--col50 {
+        width: 48%;
+    }
+}
+
+
