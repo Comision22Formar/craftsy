@@ -120,5 +120,10 @@
     .home__main__aside__section--publicidad{
         flex-direction: column;
     }
+
+    .home__main__section-sales{ 
+        width: 100%;
+        overflow: hidden;
+    }
    
 }
