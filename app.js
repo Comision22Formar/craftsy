@@ -4,13 +4,16 @@ const app = express();
 
 const PORT = 3030;
 
+const mainRoutes = require('./routers/main.routes');
+const authRoutes = require('./routers/auth.routes');
+const usersRoutes = require('./routers/users.routes');
+
 app.use(express.static(path.join(__dirname,'public')));
 
 /* rutas */
-app.get('/',(req,res) => res.sendFile(path.join(__dirname,'views','home.html')))
-app.get('/register',(req,res) => res.sendFile(path.join(__dirname,'views','register.html')))
-app.get('/login',(req,res) => res.sendFile(path.join(__dirname,'views','login.html')))
-app.get('/profile',(req,res) => res.sendFile(path.join(__dirname,'views','profile.html')))
+app.use('/', mainRoutes);
+app.use('/auth', authRoutes);
+app.use('/users', usersRoutes);
 
 
 
